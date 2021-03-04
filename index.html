@@ -27,8 +27,8 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
-      <h2 id = "today"></h2>
-      <h3 id = "datepicker"></h3>
+      <div>Today:</div><h2 id = "today"></h2>
+      <h3>Date: <input type="text" id="datepicker"></h3>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -43,55 +43,56 @@
         <tbody>
           <tr>
             <th scope="row">9 am</th>
-            <td colspan="2"></td>
-            <td><button>Save</button></td>
+            <td colspan="2"><input type="text" id="activity" value=""></td>
+            <td><button id="save">Save</button></td>
           </tr>
           <tr>
             <th scope="row">10 am</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input in= "message"></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">11 am</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">Noon</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">1 pm</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">2 pm</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">3 pm</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">4 pm</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
           <tr>
             <th scope="row">5 pm</th>
-            <td colspan="2"></td>
+            <td colspan="2"><input></input></td>
             <td><button>Save</button></td>
           </tr>
         </tbody>
       </table>
 
     </div>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./HW5java.js"></script>
   </body>
