@@ -20,10 +20,11 @@ saveButton.addEventListener("click", function(event) {
 
 var savedActivity = {
     comment: comment.value.trim()
+}
 
 localStorage.setItem("savedActivity", JSON.stringify(savedActivity));
 renderMessage();
-}});
+});
 
 function renderMessage() {
   var newActivity = JSON.parse(localStorage.getItem("savedActivity"));
