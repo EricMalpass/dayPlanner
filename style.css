@@ -46,8 +46,8 @@ d3d3d3
 white 
 */
 .past {
-  background-color: #0000;
-  color: blue;
+  background: red;
+  color: white;
 }
 
 .present {
