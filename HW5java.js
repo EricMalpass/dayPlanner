@@ -30,15 +30,17 @@ function renderMessage9() {
 };
 renderMessage9();
 
+
 var currentTime = moment().format('HH');
 
 function time9() {
   moment().format('HH');
   if (9 < currentTime){
     $("#9am").attr("class", "past");
+    console.log(currentTime)
   } else if (9 === currentTime){
     $("#9am").attr("class", "present");
-  } else (9 > currentTime) {
+  } else if (9 > currentTime) {
     $("#9am").attr("class", "future");
   }
 }
@@ -67,8 +69,14 @@ renderMessage10();
 function time10() {
   moment().format('HH');
   if (10 < currentTime){
-    $("#10am").attr("class", "past")
-    console.log(currentTime);
+    $("#10am").attr("class", "past");
+    console.log(currentTime)
+  } else if (10 === currentTime){
+    $("#10am").attr("class", "present");
+  } else if (9 > currentTime) {
+    $("#10am").attr("class", "future");
   }
 }
 time10();
+
+
