@@ -38,7 +38,7 @@ for (var i = 0; i < save9.length ; i++) {
  
   for (let i = 0; i < hours.length; i++) {
       rowtime = hours[i];
-      function time9() {
+      function time() {
         moment().format('HH');
         if (hours[i] < currentTime){
           rowtimeEl.classList.add("class", "past");
@@ -49,7 +49,7 @@ for (var i = 0; i < save9.length ; i++) {
           rowtimeEl[i].classList.add("class", "future");
         }
       }
-      time9();  
+      time();  
   }
   
 
