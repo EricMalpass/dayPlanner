@@ -32,14 +32,17 @@ renderMessage9();
 
 var currentTime = moment().format('HH');
 
-function time() {
+function time9() {
   moment().format('HH');
   if (9 < currentTime){
-    $("#9am").attr("class", "past")
-    console.log(currentTime);
+    $("#9am").attr("class", "past");
+  } else if (9 === currentTime){
+    $("#9am").attr("class", "present");
+  } else (9 > currentTime) {
+    $("#9am").attr("class", "future");
   }
 }
-time();
+time9();
 
 save10.addEventListener("click", function(event) {
   event.preventDefault();
@@ -61,11 +64,11 @@ if (newActivity10 !== null) {
 };
 renderMessage10();
 
-function time() {
+function time10() {
   moment().format('HH');
   if (10 < currentTime){
     $("#10am").attr("class", "past")
     console.log(currentTime);
   }
 }
-time();
+time10();
