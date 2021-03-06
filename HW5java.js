@@ -44,11 +44,11 @@ time();
 save10.addEventListener("click", function(event) {
   event.preventDefault();
 
-var savedActivity10 = {
-  comment: savedActivity.value}
+var updateActivity10 = {
+  comment: savedActivity10.value}
   console.log(savedActivity10);
 
-localStorage.setItem("savedActivity10", JSON.stringify(savedActivity10));
+localStorage.setItem("savedActivity10", JSON.stringify(updateActivity10));
 renderMessage10();
 });
 
