@@ -17,6 +17,7 @@ var save3 = document.getElementById("save3");
 var save4 = document.getElementById("save4");
 var save5 = document.getElementById("save5");
 
+
 var today = moment();
 $("#today").text(today.format("MMM Do, YYYY"));
 
@@ -30,17 +31,17 @@ save9.addEventListener("click", function(event) {
 var savedActivity9 = {
     comment: savedActivity.value}
     console.log(savedActivity);
-
 localStorage.setItem("savedActivity", JSON.stringify(savedActivity9));
 renderMessage9();
 });
 
 function renderMessage9() {
   var newActivity = JSON.parse(localStorage.getItem("savedActivity"));
-  console.log(newActivity.comment)
+ 
   if (newActivity !== null) {
     document.getElementById("activity").textContent = newActivity.comment
   }
+  console.log(newActivity.comment)
 };
 renderMessage9();
 
@@ -73,7 +74,6 @@ renderMessage10();
 
 function renderMessage10() {
 var newActivity10 = JSON.parse(localStorage.getItem("savedActivity10"));
-console.log(newActivity10.comment)
 if (newActivity10 !== null) {
   document.getElementById("activity10").textContent = newActivity10.comment
 }
@@ -106,7 +106,6 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage11() {
   var newActivity11 = JSON.parse(localStorage.getItem("savedActivity11"));
-  console.log(newActivity11.comment);
   if (newActivity11 !== null) {
     document.getElementById("activity11").textContent = newActivity11.comment
   }
@@ -139,7 +138,7 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage12() {
   var newActivity12 = JSON.parse(localStorage.getItem("savedActivity12"));
-  console.log(newActivity12.comment);
+ 
   if (newActivity12 !== null) {
     document.getElementById("activity12").textContent = newActivity12.comment
   }
@@ -173,7 +172,7 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage1() {
   var newActivity1 = JSON.parse(localStorage.getItem("savedActivity1"));
-  console.log(newActivity1.comment);
+  
   if (newActivity1 !== null) {
     document.getElementById("activity1").textContent = newActivity1.comment
   }
@@ -206,7 +205,7 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage2() {
   var newActivity2 = JSON.parse(localStorage.getItem("savedActivity2"));
-  console.log(newActivity2.comment);
+  
   if (newActivity2 !== null) {
     document.getElementById("activity2").textContent = newActivity2.comment
   }
@@ -239,7 +238,7 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage3() {
   var newActivity3 = JSON.parse(localStorage.getItem("savedActivity3"));
-  console.log(newActivity3.comment);
+  
   if (newActivity3 !== null) {
     document.getElementById("activity3").textContent = newActivity3.comment
   }
@@ -272,10 +271,11 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage4() {
   var newActivity4 = JSON.parse(localStorage.getItem("savedActivity4"));
-  console.log(newActivity4.comment);
+  
   if (newActivity4 !== null) {
     document.getElementById("activity4").textContent = newActivity4.comment
   }
+
   };
   renderMessage4();
   
@@ -305,7 +305,7 @@ save11.addEventListener("click", function(event) {
   
   function renderMessage5() {
   var newActivity5 = JSON.parse(localStorage.getItem("savedActivity5"));
-  console.log(newActivity5.comment);
+  
   if (newActivity5 !== null) {
     document.getElementById("activity5").textContent = newActivity5.comment
   }
