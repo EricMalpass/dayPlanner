@@ -37,11 +37,9 @@ renderMessage9();
 
 function renderMessage9() {
   var newActivity = JSON.parse(localStorage.getItem("savedActivity"));
- 
   if (newActivity !== null) {
     document.getElementById("activity").textContent = newActivity.comment
   }
-  console.log(newActivity.comment)
 };
 renderMessage9();
 
@@ -50,12 +48,13 @@ var currentTime = moment().format('HH');
 
 function time9() {
   moment().format('HH');
-  if (9 < currentTime){
+  console.log(currentTime);
+  if ("9" < currentTime){
     $("#9am").attr("class", "past");
     console.log(currentTime)
-  } else if (9 === currentTime){
+  } else if ("9" === currentTime){
     $("#9am").attr("class", "present");
-  } else if (9 > currentTime) {
+  } else if ("9" > currentTime) {
     $("#9am").attr("class", "future");
   }
 }
@@ -82,12 +81,12 @@ renderMessage10();
 
 function time10() {
   moment().format('HH');
-  if (10 < currentTime){
+  if ("10" < currentTime){
     $("#10am").attr("class", "past");
     console.log(currentTime)
-  } else if (10 === currentTime){
+  } else if ("10" === currentTime){
     $("#10am").attr("class", "present");
-  } else if (9 > currentTime) {
+  } else if ( "10" > currentTime) {
     $("#10am").attr("class", "future");
   }
 }
@@ -114,12 +113,12 @@ save11.addEventListener("click", function(event) {
   
   function time11() {
     moment().format('HH');
-    if (11 < currentTime){
+    if ("11" < currentTime){
       $("#11am").attr("class", "past");
       console.log(currentTime)
-    } else if (11 === currentTime){
+    } else if ("11" === currentTime){
       $("#11am").attr("class", "present");
-    } else if (9 > currentTime) {
+    } else if ("11" > currentTime) {
       $("#11am").attr("class", "future");
     }
   }
@@ -147,12 +146,12 @@ save11.addEventListener("click", function(event) {
   
   function time12() {
     moment().format('HH');
-    if (12 < currentTime){
+    if ("12" < currentTime){
       $("#12").attr("class", "past");
       console.log(currentTime)
-    } else if (12 === currentTime){
+    } else if ("12" === currentTime){
       $("#12").attr("class", "present");
-    } else if (12 > currentTime) {
+    } else if ("12" > currentTime) {
       $("#12").attr("class", "future");
     }
   }
@@ -181,12 +180,12 @@ save11.addEventListener("click", function(event) {
   
   function time1() {
     moment().format('HH');
-    if (13 < currentTime){
+    if ("13" < currentTime){
       $("#1pm").attr("class", "past");
       console.log(currentTime)
-    } else if (13 === currentTime){
+    } else if ("13" === currentTime){
       $("#1pm").attr("class", "present");
-    } else if (13 > currentTime) {
+    } else if ("13" > currentTime) {
       $("#1pm").attr("class", "future");
     }
   }
@@ -214,12 +213,13 @@ save11.addEventListener("click", function(event) {
   
   function time2() {
     moment().format('HH');
-    if (14 < currentTime){
+    console.log (currentTime)
+    if ("14" < currentTime){
       $("#2pm").attr("class", "past");
-      console.log(currentTime)
-    } else if (14 === currentTime){
+    } else if ("14" === currentTime){
+        console.log(currentTime)
       $("#2pm").attr("class", "present");
-    } else if (14 > currentTime) {
+    } else if ("14" > currentTime) {
       $("#2pm").attr("class", "future");
     }
   }
@@ -247,12 +247,12 @@ save11.addEventListener("click", function(event) {
   
   function time3() {
     moment().format('HH');
-    if (15 < currentTime){
+    if ("15" < currentTime){
       $("#3pm").attr("class", "past");
       console.log(currentTime)
-    } else if (15 === currentTime){
+    } else if ("15" === currentTime){
       $("#3pm").attr("class", "present");
-    } else if (15 > currentTime) {
+    } else if ("15" > currentTime) {
       $("#3pm").attr("class", "future");
     }
   }
@@ -281,12 +281,12 @@ save11.addEventListener("click", function(event) {
   
   function time4() {
     moment().format('HH');
-    if (16 < currentTime){
+    if ("16" < currentTime){
       $("#4pm").attr("class", "past");
       console.log(currentTime)
-    } else if (16 === currentTime){
+    } else if ("16" === currentTime){
       $("#4pm").attr("class", "present");
-    } else if (16 > currentTime) {
+    } else if ("16" > currentTime) {
       $("#4pm").attr("class", "future");
     }
   }
@@ -314,12 +314,12 @@ save11.addEventListener("click", function(event) {
   
   function time5() {
     moment().format('HH');
-    if (17 < currentTime){
+    if ("17" < currentTime){
       $("#5pm").attr("class", "past");
       console.log(currentTime)
-    } else if (17 === currentTime){
+    } else if ("17" === currentTime){
       $("#5pm").attr("class", "present");
-    } else if (17 > currentTime) {
+    } else if ("17" > currentTime) {
       $("#5pm").attr("class", "future");
     }
   }
