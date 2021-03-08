@@ -19,11 +19,11 @@ var save5 = document.getElementById("save5");
 
 
 var today = moment();
-$("#today").text(today.format("MMM Do, YYYY"));
+$("#today").text(today.format("MMM Do YYYY, h:mm:ss a"));
 
-$( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+//$( function() {
+//    $( "#datepicker" ).datepicker();
+//  } );
 
 save9.addEventListener("click", function(event) {
   event.preventDefault();
@@ -49,12 +49,12 @@ var currentTime = moment().format('HH');
 function time9() {
   moment().format('HH');
   console.log(currentTime);
-  if ("9" < currentTime){
+  if ("09" < currentTime){
     $("#9am").attr("class", "past");
     console.log(currentTime)
-  } else if ("9" === currentTime){
+  } else if ("09" === currentTime){
     $("#9am").attr("class", "present");
-  } else if ("9" > currentTime) {
+  } else if ("09" > currentTime) {
     $("#9am").attr("class", "future");
   }
 }
