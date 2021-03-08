@@ -151,9 +151,9 @@ save11.addEventListener("click", function(event) {
       $("#12").attr("class", "past");
       console.log(currentTime)
     } else if (12 === currentTime){
-      $("#11am").attr("class", "present");
+      $("#12").attr("class", "present");
     } else if (12 > currentTime) {
-      $("#11am").attr("class", "future");
+      $("#12").attr("class", "future");
     }
   }
   time12();
@@ -184,9 +184,9 @@ save11.addEventListener("click", function(event) {
     if (13 < currentTime){
       $("#1pm").attr("class", "past");
       console.log(currentTime)
-    } else if (12 === currentTime){
+    } else if (13 === currentTime){
       $("#1pm").attr("class", "present");
-    } else if (12 > currentTime) {
+    } else if (13 > currentTime) {
       $("#1pm").attr("class", "future");
     }
   }
